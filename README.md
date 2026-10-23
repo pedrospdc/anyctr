@@ -207,6 +207,12 @@ anyctr will not shadow a real Docker: if `docker` already exists it says so and
 leaves it alone, unless you pass `--force`. `anyctr runtime list` offers the
 alias when it is missing, and `anyctr alias --remove` undoes it.
 
+Shell completions come from the same command surface:
+
+```console
+anyctr completion zsh > "${fpath[1]}/_anyctr"      # bash, fish, powershell too
+```
+
 ## Configuration
 
 Optional. `~/.config/anyctr/config.toml` (`%APPDATA%\anyctr\config.toml` on
@@ -247,7 +253,6 @@ is a bug.
 - `containerd`/`nerdctl` adapter
 - A built-in Compose engine, so `compose up` needs no external provider
 - `inspect`, `cp`, `network`, `volume` commands
-- Shell completions and a `docker`-named symlink mode for drop-in use
 
 ## Development
 
