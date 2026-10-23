@@ -61,6 +61,12 @@ go install github.com/pedrospdc/anyctr/cmd/anyctr@latest   # requires Go 1.25+
 make install
 ```
 
+or with Nix:
+
+```console
+nix profile install github:pedrospdc/anyctr
+```
+
 Prebuilt binaries for darwin, linux and windows on amd64 and arm64 are attached to
 [each release](https://github.com/pedrospdc/anyctr/releases), with checksums. On
 Windows, download the `.zip` and put `anyctr.exe` on your PATH.
